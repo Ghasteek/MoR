@@ -10,21 +10,19 @@ import com.mor.R;
 import com.mor.constants.NavigationDrawerConstants;
 
 
-public class HomeFragment extends Fragment {
-
-
+public class Ctvrtek extends Fragment {
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        getActivity().setTitle(NavigationDrawerConstants.TAG_HOME);
+        getActivity().setTitle(NavigationDrawerConstants.TAG_Ctvrtek);
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_home, container, false);
+        return inflater.inflate(R.layout.fragment_ctvrtek, container, false);
     }
 
 }

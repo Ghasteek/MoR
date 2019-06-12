@@ -3,20 +3,49 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:showIn="navigation_view">
 
-    <group android:checkableBehavior="single">
-        <item
-            android:id="@+id/drawerProgram"
-            android:icon="@android:drawable/ic_menu_my_calendar"
-            android:title="@string/drawerProgram" />
-        <item
-            android:id="@+id/drawerKontakty"
-            android:icon="@android:drawable/ic_menu_call"
-            android:title="@string/drawerContacts" />
-        <item
-            android:id="@+id/drawerAbout"
-            android:icon="@android:drawable/ic_menu_info_details"
-            android:title="@string/drawerAbout" />
+    <item
+        android:id="@+id/program"
+        android:title="Program">
+        <menu>
+            <group
+                android:checkableBehavior="single">
+                <item
+                    android:id="@+id/drawerCtvrtek"
+                    android:icon="@drawable/ic_menu_send"
+                    android:title="@string/drawerCtvrtek" />
+                <item
+                    android:id="@+id/drawerPatek"
+                    android:icon="@drawable/ic_menu_send"
+                    android:title="@string/drawerPatek" />
+                <item
+                    android:id="@+id/drawerSobota"
+                    android:icon="@drawable/ic_menu_send"
+                    android:title="@string/drawerSobota" />
+                <item
+                    android:id="@+id/drawerNedele"
+                    android:icon="@drawable/ic_menu_send"
+                    android:title="@string/drawerNedele" />
+            </group>
+        </menu>
+    </item>
+    <item
+        android:title="Ostatní"
+        android:id="@+id/ostatni">
+        <menu>
+            <group
+                android:checkableBehavior="single">
 
-    </group>
+                <item
+                    android:id="@+id/drawerKontakty"
+                    android:icon="@android:drawable/ic_menu_call"
+                    android:title="@string/drawerContacts" />
+                <item
+                    android:id="@+id/drawerAbout"
+                    android:icon="@android:drawable/ic_menu_info_details"
+                    android:title="@string/drawerAbout" />
+            </group>
+        </menu>
+    </item>
+
 
 </menu>
