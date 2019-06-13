@@ -5,10 +5,588 @@
     android:layout_height="match_parent"
     tools:context=".fragments.Patek">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="PATEK" />
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/header"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:background="@color/colorRed"
+                android:paddingTop="4sp"
+                android:text="Pátek - 12.7.2019" />
+
+            <TextView
+                android:id="@+id/ten"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/header"
+                android:text="10:00"/>
+
+            <View
+                android:id="@+id/divider1"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="8sp"
+                android:background="#fff"
+                android:layout_alignTop="@+id/ten"/>
+
+            <TextView
+                android:id="@+id/eleven"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/marginTime"
+                android:layout_below="@+id/ten"
+                android:text="11:00"/>
+
+            <View
+                android:id="@+id/divider2"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="120sp"
+                android:background="#fff"
+                android:layout_alignTop="@+id/divider1"/>
+
+            <TextView
+                android:id="@+id/twelve"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/marginTime"
+                android:layout_below="@+id/eleven"
+                android:text="12:00"/>
+
+            <View
+                android:id="@+id/divider3"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="120sp"
+                android:background="#fff"
+                android:layout_alignTop="@+id/divider2"/>
+
+            <ImageView
+                android:layout_width="230sp"
+                android:layout_height="90sp"
+                android:layout_marginTop="70sp"
+                android:scaleType="centerCrop"
+                android:layout_alignTop="@+id/divider2"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/rhemorha"/>
+            <TextView
+                android:id="@+id/rhemorha"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="85sp"
+                android:layout_below="@+id/divider2"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:text="RHEMORHA"/>
+            <TextView
+                android:id="@+id/rhemorhaTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/rhemorha"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:text="11:35 - 12:15"/>
+
+
+            <TextView
+                android:id="@+id/thirteen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/marginTime"
+                android:layout_below="@+id/twelve"
+                android:text="13:00"/>
+
+            <View
+                android:id="@+id/divider4"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="120sp"
+                android:background="#fff"
+                android:layout_alignTop="@+id/divider3"/>
+
+            <ImageView
+                android:layout_width="230sp"
+                android:layout_height="100dp"
+                android:layout_marginTop="60sp"
+                android:scaleType="centerCrop"
+                android:layout_alignTop="@+id/divider3"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/to_the_rats_and_wolves"/>
+            <TextView
+                android:id="@+id/ratsAndWolves"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="65sp"
+                android:layout_below="@+id/divider3"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:text="TO THE RATS"/>
+            <TextView
+                android:id="@+id/ratsAndWolves2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/ratsAndWolves"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:text="AND WOLVES"/>
+            <TextView
+                android:id="@+id/ratsAndWolvesTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_below="@+id/ratsAndWolves2"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:text="12:30 - 13:20"/>
+
+            <TextView
+                android:id="@+id/fourteen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/marginTime"
+                android:layout_below="@+id/thirteen"
+                android:text="14:00"/>
+
+            <View
+                android:id="@+id/divider5"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="120sp"
+                android:background="#fff"
+                android:layout_alignTop="@+id/divider4"/>
+
+            <ImageView
+                android:layout_width="230sp"
+                android:layout_height="120sp"
+                android:layout_marginTop="80sp"
+                android:scaleType="centerCrop"
+                android:layout_alignTop="@+id/divider4"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/twilight_force"/>
+            <TextView
+                android:id="@+id/twilightForce"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="105sp"
+                android:layout_below="@+id/divider4"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:text="TWILIGHT FORCE"/>
+            <TextView
+                android:id="@+id/twilightForceTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/twilightForce"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:text="13:40 - 14:40"/>
+
+            <TextView
+                android:id="@+id/fifteen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/marginTime"
+                android:layout_below="@+id/fourteen"
+                android:text="15:00"/>
+
+            <View
+                android:id="@+id/divider6"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="120sp"
+                android:background="#fff"
+                android:layout_alignTop="@+id/divider5"/>
+
+            <TextView
+                android:id="@+id/sixteen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/marginTime"
+                android:layout_below="@+id/fifteen"
+                android:text="16:00"/>
+
+            <View
+                android:id="@+id/divider7"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="120sp"
+                android:background="#fff"
+                android:layout_alignTop="@+id/divider6"/>
+
+            <ImageView
+                android:layout_width="230sp"
+                android:layout_height="120sp"
+                android:layout_marginTop="0sp"
+                android:scaleType="centerCrop"
+                android:layout_alignTop="@+id/divider6"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/hardline"/>
+            <TextView
+                android:id="@+id/hardline"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25sp"
+                android:layout_below="@+id/divider6"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:text="HARDLINE"/>
+            <TextView
+                android:id="@+id/hardlineTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/hardline"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:text="15:00 - 16:00"/>
+
+            <TextView
+                android:id="@+id/seventeen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/marginTime"
+                android:layout_below="@+id/sixteen"
+                android:text="17:00"/>
+
+            <View
+                android:id="@+id/divider8"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="120sp"
+                android:background="#fff"
+                android:layout_alignTop="@+id/divider7"/>
+
+            <ImageView
+                android:layout_width="230sp"
+                android:layout_height="150sp"
+                android:layout_marginTop="60sp"
+                android:scaleType="centerCrop"
+                android:layout_alignTop="@+id/divider7"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/battle_beast"/>
+            <TextView
+                android:id="@+id/battleBeast"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="115sp"
+                android:layout_below="@+id/divider7"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:text="BATTLE BEAST"/>
+            <TextView
+                android:id="@+id/battleBeastTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/battleBeast"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:text="16:30 - 17:45"/>
+
+            <TextView
+                android:id="@+id/eighteen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/marginTime"
+                android:layout_below="@+id/seventeen"
+                android:text="18:00"/>
+
+            <View
+                android:id="@+id/divider9"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="120sp"
+                android:background="#fff"
+                android:layout_alignTop="@+id/divider8"/>
+
+            <TextView
+                android:id="@+id/nineteen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/marginTime"
+                android:layout_below="@+id/eighteen"
+                android:text="19:00"/>
+
+            <View
+                android:id="@+id/divider10"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="120sp"
+                android:background="#fff"
+                android:layout_alignTop="@+id/divider9"/>
+
+            <ImageView
+                android:layout_width="230sp"
+                android:layout_height="150sp"
+                android:layout_marginTop="30sp"
+                android:scaleType="centerCrop"
+                android:layout_alignTop="@+id/divider9"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/amaranthe"/>
+            <TextView
+                android:id="@+id/amaranthe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="65sp"
+                android:layout_below="@+id/divider9"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:text="AMARANTHE"/>
+            <TextView
+                android:id="@+id/amarantheTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/amaranthe"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:text="18:15 - 19:30"/>
+
+            <TextView
+                android:id="@+id/twenty"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/marginTime"
+                android:layout_below="@+id/nineteen"
+                android:text="20:00"/>
+
+            <View
+                android:id="@+id/divider11"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="120sp"
+                android:background="#fff"
+                android:layout_alignTop="@+id/divider10"/>
+
+            <TextView
+                android:id="@+id/twentyone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/marginTime"
+                android:layout_below="@+id/twenty"
+                android:text="21:00"/>
+
+            <View
+                android:id="@+id/divider12"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="120sp"
+                android:background="#fff"
+                android:layout_alignTop="@+id/divider11"/>
+
+            <ImageView
+                android:layout_width="230sp"
+                android:layout_height="150sp"
+                android:layout_marginTop="20sp"
+                android:scaleType="centerCrop"
+                android:layout_alignTop="@+id/divider11"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/dimmu_borgir"/>
+            <TextView
+                android:id="@+id/dimmuBorgir"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="65sp"
+                android:layout_below="@+id/divider11"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:text="DIMMU BORGIR"/>
+            <TextView
+                android:id="@+id/dimmuBorgirTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/dimmuBorgir"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:text="20:10 - 21:25"/>
+
+            <TextView
+                android:id="@+id/twentytwo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/marginTime"
+                android:layout_below="@+id/twentyone"
+                android:text="22:00"/>
+
+            <View
+                android:id="@+id/divider13"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="120sp"
+                android:background="#fff"
+                android:layout_alignTop="@+id/divider12"/>
+
+            <TextView
+                android:id="@+id/twentythree"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/marginTime"
+                android:layout_below="@+id/twentytwo"
+                android:text="23:00"/>
+
+            <View
+                android:id="@+id/divider14"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="120sp"
+                android:background="#fff"
+                android:layout_alignTop="@+id/divider13"/>
+
+            <TextView
+                android:id="@+id/zero"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/marginTime"
+                android:layout_below="@+id/twentythree"
+                android:text="00:00"/>
+
+            <View
+                android:id="@+id/divider15"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="120sp"
+                android:background="#fff"
+                android:layout_alignTop="@+id/divider14"/>
+
+            <ImageView
+                android:layout_width="230sp"
+                android:layout_height="250sp"
+                android:layout_marginTop="20sp"
+                android:scaleType="centerCrop"
+                android:layout_alignTop="@+id/divider13"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/avantasia"/>
+            <TextView
+                android:id="@+id/avantasia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="135sp"
+                android:layout_below="@+id/divider13"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:text="AVANTASIA"/>
+            <TextView
+                android:id="@+id/avantasiaTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/avantasia"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:text="22:10 - 0:15"/>
+
+            <TextView
+                android:id="@+id/one"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/marginTime"
+                android:layout_below="@+id/zero"
+                android:text="1:00"/>
+
+            <View
+                android:id="@+id/divider16"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="120sp"
+                android:background="#fff"
+                android:layout_alignTop="@+id/divider15"/>
+
+            <ImageView
+                android:layout_width="230sp"
+                android:layout_height="140sp"
+                android:layout_marginTop="100sp"
+                android:scaleType="centerCrop"
+                android:layout_alignTop="@+id/divider15"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/equilibrium"/>
+            <TextView
+                android:id="@+id/equilibrium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="155sp"
+                android:layout_below="@+id/divider15"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:text="EQUILIBRIUM"/>
+            <TextView
+                android:id="@+id/equilibriumTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/equilibrium"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:text="0:50 - 2:00"/>
+
+            <TextView
+                android:id="@+id/two"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/marginTime"
+                android:layout_below="@+id/one"
+                android:text="2:00"/>
+
+            <View
+                android:id="@+id/divider17"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="120sp"
+                android:background="#fff"
+                android:layout_alignTop="@+id/divider16"/>
+
+        </RelativeLayout>
+
+    </ScrollView>
 
 </FrameLayout>
