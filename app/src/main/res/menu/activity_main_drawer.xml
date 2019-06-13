@@ -29,16 +29,10 @@
         </menu>
     </item>
     <item
-        android:title="Ostatní"
         android:id="@+id/ostatni">
         <menu>
             <group
                 android:checkableBehavior="single">
-
-                <item
-                    android:id="@+id/drawerKontakty"
-                    android:icon="@android:drawable/ic_menu_call"
-                    android:title="@string/drawerContacts" />
                 <item
                     android:id="@+id/drawerAbout"
                     android:icon="@android:drawable/ic_menu_info_details"

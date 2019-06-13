@@ -19,7 +19,6 @@ import com.mor.fragments.Ctvrtek;
 import com.mor.fragments.Patek;
 import com.mor.fragments.Sobota;
 import com.mor.fragments.Nedele;
-import com.mor.fragments.Contacts;
 import com.mor.fragments.About;
 
 
@@ -59,14 +58,15 @@ public class MainActivity extends AppCompatActivity
         tools.setTitle(s);
         navigationView.setNavigationItemSelectedListener(this);
 
-        MenuItem tools2= myMenu.findItem(R.id.ostatni);
+        /*MenuItem tools2= myMenu.findItem(R.id.ostatni);
         SpannableString s2 = new SpannableString(tools2.getTitle());
         s2.setSpan(new TextAppearanceSpan(this, R.style.MyTheme), 0, s2.length(), 0);
         tools2.setTitle(s2);
-        navigationView.setNavigationItemSelectedListener(this);
+        navigationView.setNavigationItemSelectedListener(this);*/
 
         Fragment fragment = new Ctvrtek();
         displaySelectedFragment(fragment);
+
     }
 
     @Override
@@ -121,9 +121,6 @@ public class MainActivity extends AppCompatActivity
             displaySelectedFragment(fragment);
         } else if (id == R.id.drawerNedele) {
             fragment = new Nedele();
-            displaySelectedFragment(fragment);
-        } else if (id == R.id.drawerKontakty) {
-            fragment = new Contacts();
             displaySelectedFragment(fragment);
         } else if (id == R.id.drawerAbout) {
             fragment = new About();

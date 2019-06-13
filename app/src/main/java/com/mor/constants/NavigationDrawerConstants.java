@@ -10,7 +10,7 @@ public class NavigationDrawerConstants {
     public final static String TAG_Ctvrtek = "Čtvrtek";
     public final static String TAG_Patek = "Pátek";
     public final static String TAG_Sobota = "Sobota";
-    public final static String TAG_Nedele = "Nedele";
+    public final static String TAG_Nedele = "Neděle";
 
 
 

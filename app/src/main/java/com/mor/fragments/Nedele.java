@@ -5,7 +5,6 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-
 import com.mor.R;
 import com.mor.constants.NavigationDrawerConstants;
 
@@ -16,6 +15,7 @@ public class Nedele extends Fragment {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         getActivity().setTitle(NavigationDrawerConstants.TAG_Nedele);
+
     }
 
     @Override
