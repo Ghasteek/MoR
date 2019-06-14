@@ -330,6 +330,13 @@
                 android:alpha="@dimen/alphaDivider"
                 android:layout_alignTop="@+id/divider1"/>
 
+            <View
+                android:layout_width="230sp"
+                android:layout_height="90sp"
+                android:layout_marginTop="70sp"
+                android:layout_alignTop="@+id/divider11"
+                android:layout_centerHorizontal="true"
+                android:background="@color/colorBackground"/>
             <ImageView
                 android:layout_width="230sp"
                 android:layout_height="90sp"
@@ -360,6 +367,13 @@
                 android:textStyle="bold"
                 android:text="11:35 - 12:15"/>
 
+            <View
+                android:layout_width="230sp"
+                android:layout_height="100dp"
+                android:layout_marginTop="60sp"
+                android:layout_alignTop="@+id/divider12"
+                android:layout_centerHorizontal="true"
+                android:background="@color/colorBackground"/>
             <ImageView
                 android:layout_width="230sp"
                 android:layout_height="100dp"
@@ -400,6 +414,13 @@
                 android:textStyle="bold"
                 android:text="12:30 - 13:20"/>
 
+            <View
+                android:layout_width="230sp"
+                android:layout_height="120sp"
+                android:layout_marginTop="80sp"
+                android:layout_alignTop="@+id/divider13"
+                android:layout_centerHorizontal="true"
+                android:background="@color/colorBackground"/>
             <ImageView
                 android:layout_width="230sp"
                 android:layout_height="120sp"
@@ -430,6 +451,13 @@
                 android:textStyle="bold"
                 android:text="13:40 - 14:40"/>
 
+            <View
+                android:layout_width="230sp"
+                android:layout_height="120sp"
+                android:layout_marginTop="0sp"
+                android:layout_alignTop="@+id/divider15"
+                android:layout_centerHorizontal="true"
+                android:background="@color/colorBackground"/>
             <ImageView
                 android:layout_width="230sp"
                 android:layout_height="120sp"
@@ -460,6 +488,13 @@
                 android:textStyle="bold"
                 android:text="15:00 - 16:00"/>
 
+            <View
+                android:layout_width="230sp"
+                android:layout_height="150sp"
+                android:layout_marginTop="60sp"
+                android:layout_alignTop="@+id/divider16"
+                android:layout_centerHorizontal="true"
+                android:background="@color/colorBackground"/>
             <ImageView
                 android:layout_width="230sp"
                 android:layout_height="150sp"
@@ -490,6 +525,13 @@
                 android:textStyle="bold"
                 android:text="16:30 - 17:45"/>
 
+            <View
+                android:layout_width="230sp"
+                android:layout_height="150sp"
+                android:layout_marginTop="30sp"
+                android:layout_alignTop="@+id/divider18"
+                android:layout_centerHorizontal="true"
+                android:background="@color/colorBackground"/>
             <ImageView
                 android:layout_width="230sp"
                 android:layout_height="150sp"
@@ -520,6 +562,13 @@
                 android:textStyle="bold"
                 android:text="18:15 - 19:30"/>
 
+            <View
+                android:layout_width="230sp"
+                android:layout_height="150sp"
+                android:layout_marginTop="20sp"
+                android:layout_alignTop="@+id/divider20"
+                android:layout_centerHorizontal="true"
+                android:background="@color/colorBackground"/>
             <ImageView
                 android:layout_width="230sp"
                 android:layout_height="150sp"
@@ -550,6 +599,13 @@
                 android:textStyle="bold"
                 android:text="20:10 - 21:25"/>
 
+            <View
+                android:layout_width="230sp"
+                android:layout_height="250sp"
+                android:layout_marginTop="20sp"
+                android:layout_alignTop="@+id/divider22"
+                android:layout_centerHorizontal="true"
+                android:background="@color/colorBackground"/>
             <ImageView
                 android:layout_width="230sp"
                 android:layout_height="250sp"
@@ -580,6 +636,13 @@
                 android:textStyle="bold"
                 android:text="22:10 - 0:15"/>
 
+            <View
+                android:layout_width="230sp"
+                android:layout_height="140sp"
+                android:layout_marginTop="100sp"
+                android:layout_alignTop="@+id/divider0"
+                android:layout_centerHorizontal="true"
+                android:background="@color/colorBackground"/>
             <ImageView
                 android:layout_width="230sp"
                 android:layout_height="140sp"

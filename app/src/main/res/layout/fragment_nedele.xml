@@ -332,6 +332,13 @@
 
 
 
+            <View
+                android:layout_width="230sp"
+                android:layout_height="90sp"
+                android:layout_marginTop="0sp"
+                android:layout_alignTop="@+id/divider10"
+                android:layout_centerHorizontal="true"
+                android:background="@color/colorBackground"/>
             <ImageView
                 android:layout_width="230sp"
                 android:layout_height="90sp"
@@ -362,9 +369,16 @@
                 android:textStyle="bold"
                 android:text="10:00 - 10:45"/>
 
+            <View
+                android:layout_width="230sp"
+                android:layout_height="100sp"
+                android:layout_marginTop="110sp"
+                android:layout_alignTop="@+id/divider10"
+                android:layout_centerHorizontal="true"
+                android:background="@color/colorBackground"/>
             <ImageView
                 android:layout_width="230sp"
-                android:layout_height="100dp"
+                android:layout_height="100sp"
                 android:layout_marginTop="110sp"
                 android:scaleType="centerCrop"
                 android:layout_alignTop="@+id/divider10"
@@ -392,6 +406,13 @@
                 android:textStyle="bold"
                 android:text="10:55 - 11:45"/>
 
+            <View
+                android:layout_width="230sp"
+                android:layout_height="100sp"
+                android:layout_marginTop="0sp"
+                android:layout_alignTop="@+id/divider12"
+                android:layout_centerHorizontal="true"
+                android:background="@color/colorBackground"/>
             <ImageView
                 android:layout_width="230sp"
                 android:layout_height="100sp"
@@ -452,6 +473,13 @@
                 android:textStyle="bold"
                 android:text="13:05 - 13:55"/>
 
+            <View
+                android:layout_width="230sp"
+                android:layout_height="120sp"
+                android:layout_marginTop="30sp"
+                android:layout_alignTop="@+id/divider14"
+                android:layout_centerHorizontal="true"
+                android:background="@color/colorBackground"/>
             <ImageView
                 android:layout_width="230sp"
                 android:layout_height="120sp"
@@ -482,6 +510,13 @@
                 android:textStyle="bold"
                 android:text="14:15 - 15:15"/>
 
+            <View
+                android:layout_width="230sp"
+                android:layout_height="120sp"
+                android:layout_marginTop="70sp"
+                android:layout_alignTop="@+id/divider15"
+                android:layout_centerHorizontal="true"
+                android:background="@color/colorBackground"/>
             <ImageView
                 android:layout_width="230sp"
                 android:layout_height="120sp"
@@ -512,6 +547,13 @@
                 android:textStyle="bold"
                 android:text="15:35 - 16:35"/>
 
+            <View
+                android:layout_width="230sp"
+                android:layout_height="150sp"
+                android:layout_marginTop="110sp"
+                android:layout_alignTop="@+id/divider16"
+                android:layout_centerHorizontal="true"
+                android:background="@color/colorBackground"/>
             <ImageView
                 android:layout_width="230sp"
                 android:layout_height="150sp"
@@ -542,6 +584,13 @@
                 android:textStyle="bold"
                 android:text="16:55 - 18:10"/>
 
+            <View
+                android:layout_width="230sp"
+                android:layout_height="160sp"
+                android:layout_marginTop="80sp"
+                android:layout_alignTop="@+id/divider18"
+                android:layout_centerHorizontal="true"
+                android:background="@color/colorBackground"/>
             <ImageView
                 android:layout_width="230sp"
                 android:layout_height="160sp"
@@ -572,6 +621,13 @@
                 android:textStyle="bold"
                 android:text="18:40 - 20:00"/>
 
+            <View
+                android:layout_width="230sp"
+                android:layout_height="180sp"
+                android:layout_marginTop="60sp"
+                android:layout_alignTop="@+id/divider20"
+                android:layout_centerHorizontal="true"
+                android:background="@color/colorBackground"/>
             <ImageView
                 android:layout_width="230sp"
                 android:layout_height="180sp"
@@ -602,6 +658,13 @@
                 android:textStyle="bold"
                 android:text="20:30 - 22:00"/>
 
+            <View
+                android:layout_width="230sp"
+                android:layout_height="180sp"
+                android:layout_marginTop="60sp"
+                android:layout_alignTop="@+id/divider22"
+                android:layout_centerHorizontal="true"
+                android:background="@color/colorBackground"/>
             <ImageView
                 android:layout_width="230sp"
                 android:layout_height="180sp"
