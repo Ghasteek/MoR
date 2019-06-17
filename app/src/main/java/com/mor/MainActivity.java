@@ -21,6 +21,8 @@ import com.mor.fragments.Sobota;
 import com.mor.fragments.Nedele;
 import com.mor.fragments.About;
 
+import java.util.Calendar;
+
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -58,13 +60,16 @@ public class MainActivity extends AppCompatActivity
         tools.setTitle(s);
         navigationView.setNavigationItemSelectedListener(this);
 
-        /*MenuItem tools2= myMenu.findItem(R.id.ostatni);
-        SpannableString s2 = new SpannableString(tools2.getTitle());
-        s2.setSpan(new TextAppearanceSpan(this, R.style.MyTheme), 0, s2.length(), 0);
-        tools2.setTitle(s2);
-        navigationView.setNavigationItemSelectedListener(this);*/
+        Calendar cal = Calendar.getInstance();
+        int day = cal.get(Calendar.DAY_OF_MONTH);
+        int month = cal.get(Calendar.MONTH);
 
         Fragment fragment = new Ctvrtek();
+
+        if (month == 6 && day == 12) {fragment = new Patek();}
+        else if (month == 6 && day == 13) {fragment = new Sobota();}
+        else if (month == 6 && day == 14) {fragment = new Nedele();}
+
         displaySelectedFragment(fragment);
 
     }
@@ -79,27 +84,6 @@ public class MainActivity extends AppCompatActivity
         }
     }
 
-    /*@Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.main, menu);
-        return true;
-    }*/
-
-    /*@Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
-
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
-        }
-
-        return super.onOptionsItemSelected(item);
-    }*/
 
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {
