@@ -63,15 +63,15 @@ public class MainActivity extends AppCompatActivity
         Calendar cal = Calendar.getInstance();
         int day = cal.get(Calendar.DAY_OF_MONTH);
         int month = cal.get(Calendar.MONTH);
+        int hour = cal.get(Calendar.HOUR_OF_DAY);
 
         Fragment fragment = new Ctvrtek();
 
-        if (month == 6 && day == 12) {fragment = new Patek();}
-        else if (month == 6 && day == 13) {fragment = new Sobota();}
-        else if (month == 6 && day == 14) {fragment = new Nedele();}
+        if ((month == 6 && day == 12 && hour >= 3) || (month == 6 && day == 13 && hour <= 2)) {fragment = new Patek();navigationView.setCheckedItem(R.id.drawerPatek);}
+        else if ((month == 6 && day == 13) || (month == 6 && day == 14 && hour <= 2)) {fragment = new Sobota();navigationView.setCheckedItem(R.id.drawerSobota);}
+        else if ((month == 6 && day == 14) || (month == 6 && day == 15 && hour <= 2)) {fragment = new Nedele(); navigationView.setCheckedItem(R.id.drawerNedele);}
 
         displaySelectedFragment(fragment);
-
     }
 
     @Override
@@ -127,5 +127,10 @@ public class MainActivity extends AppCompatActivity
         FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
         fragmentTransaction.replace(R.id.frame, fragment);
         fragmentTransaction.commit();
+    }
+
+    @SuppressWarnings("WeakerAccess")
+    public static class Globals {
+        public static String messageStr;
     }
 }

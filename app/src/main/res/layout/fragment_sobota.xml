@@ -6,6 +6,7 @@
     tools:context=".fragments.Sobota">
 
     <ScrollView
+        android:id="@+id/scrollViewId"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 

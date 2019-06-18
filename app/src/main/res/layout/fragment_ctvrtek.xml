@@ -6,8 +6,10 @@
     tools:context=".fragments.Ctvrtek">
 
     <ScrollView
+        android:id="@+id/scrollViewId"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content"
+        android:isScrollContainer="false">
 
 
         <RelativeLayout
@@ -19,316 +21,326 @@
                 android:id="@+id/header"
                 android:layout_width="match_parent"
                 android:layout_height="35dp"
-                android:textAlignment="center"
-                android:textSize="20sp"
                 android:background="@color/colorRed"
                 android:paddingTop="4sp"
-                android:text="Čtvrtek - 11.7.2019" />
+                android:text="Čtvrtek - 11.7.2019"
+                android:textAlignment="center"
+                android:textSize="20sp" />
 
             <TextView
                 android:id="@+id/ten"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/header"
-                android:text="10:00"/>
+                android:text="10:00" />
+
+            <View
+                android:id="@+id/pointerId"
+                android:layout_width="match_parent"
+                android:layout_height="15sp"
+                android:layout_alignTop="@+id/ten"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="8sp"
+                android:alpha="@dimen/alphaDivider"
+                android:background="#F84CAF50" />
 
             <View
                 android:id="@+id/divider10"
                 android:layout_width="match_parent"
                 android:layout_height="2dp"
+                android:layout_alignTop="@+id/ten"
                 android:layout_marginStart="50dp"
                 android:layout_marginTop="8sp"
-                android:background="#fff"
                 android:alpha="@dimen/alphaDivider"
-                android:layout_alignTop="@+id/ten"/>
+                android:background="#fff" />
 
             <TextView
                 android:id="@+id/eleven"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/marginTime"
                 android:layout_below="@+id/ten"
-                android:text="11:00"/>
+                android:layout_marginTop="@dimen/marginTime"
+                android:text="11:00" />
 
             <View
                 android:id="@+id/divider11"
                 android:layout_width="match_parent"
                 android:layout_height="2dp"
+                android:layout_alignTop="@+id/divider10"
                 android:layout_marginStart="50dp"
                 android:layout_marginTop="120sp"
-                android:background="#fff"
                 android:alpha="@dimen/alphaDivider"
-                android:layout_alignTop="@+id/divider10"/>
+                android:background="#fff" />
 
             <TextView
                 android:id="@+id/twelve"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/marginTime"
                 android:layout_below="@+id/eleven"
-                android:text="12:00"/>
+                android:layout_marginTop="@dimen/marginTime"
+                android:text="12:00" />
 
             <View
                 android:id="@+id/divider12"
                 android:layout_width="match_parent"
                 android:layout_height="2dp"
+                android:layout_alignTop="@+id/divider11"
                 android:layout_marginStart="50dp"
                 android:layout_marginTop="120sp"
-                android:background="#fff"
                 android:alpha="@dimen/alphaDivider"
-                android:layout_alignTop="@+id/divider11"/>
+                android:background="#fff" />
 
             <TextView
                 android:id="@+id/thirteen"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/marginTime"
                 android:layout_below="@+id/twelve"
-                android:text="13:00"/>
+                android:layout_marginTop="@dimen/marginTime"
+                android:text="13:00" />
 
             <View
                 android:id="@+id/divider13"
                 android:layout_width="match_parent"
                 android:layout_height="2dp"
+                android:layout_alignTop="@+id/divider12"
                 android:layout_marginStart="50dp"
                 android:layout_marginTop="120sp"
-                android:background="#fff"
                 android:alpha="@dimen/alphaDivider"
-                android:layout_alignTop="@+id/divider12"/>
+                android:background="#fff" />
 
             <TextView
                 android:id="@+id/fourteen"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/marginTime"
                 android:layout_below="@+id/thirteen"
-                android:text="14:00"/>
+                android:layout_marginTop="@dimen/marginTime"
+                android:text="14:00" />
 
             <View
                 android:id="@+id/divider14"
                 android:layout_width="match_parent"
                 android:layout_height="2dp"
+                android:layout_alignTop="@+id/divider13"
                 android:layout_marginStart="50dp"
                 android:layout_marginTop="120sp"
-                android:background="#fff"
                 android:alpha="@dimen/alphaDivider"
-                android:layout_alignTop="@+id/divider13"/>
+                android:background="#fff" />
 
             <TextView
                 android:id="@+id/fifteen"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/marginTime"
                 android:layout_below="@+id/fourteen"
-                android:text="15:00"/>
+                android:layout_marginTop="@dimen/marginTime"
+                android:text="15:00" />
 
             <View
                 android:id="@+id/divider15"
                 android:layout_width="match_parent"
                 android:layout_height="2dp"
+                android:layout_alignTop="@+id/divider14"
                 android:layout_marginStart="50dp"
                 android:layout_marginTop="120sp"
-                android:background="#fff"
                 android:alpha="@dimen/alphaDivider"
-                android:layout_alignTop="@+id/divider14"/>
+                android:background="#fff" />
 
             <TextView
                 android:id="@+id/sixteen"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/marginTime"
                 android:layout_below="@+id/fifteen"
-                android:text="16:00"/>
+                android:layout_marginTop="@dimen/marginTime"
+                android:text="16:00" />
 
             <View
                 android:id="@+id/divider16"
                 android:layout_width="match_parent"
                 android:layout_height="2dp"
+                android:layout_alignTop="@+id/divider15"
                 android:layout_marginStart="50dp"
                 android:layout_marginTop="120sp"
-                android:background="#fff"
                 android:alpha="@dimen/alphaDivider"
-                android:layout_alignTop="@+id/divider15"/>
+                android:background="#fff" />
 
             <TextView
                 android:id="@+id/seventeen"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/marginTime"
                 android:layout_below="@+id/sixteen"
-                android:text="17:00"/>
+                android:layout_marginTop="@dimen/marginTime"
+                android:text="17:00" />
 
             <View
                 android:id="@+id/divider17"
                 android:layout_width="match_parent"
                 android:layout_height="2dp"
+                android:layout_alignTop="@+id/divider16"
                 android:layout_marginStart="50dp"
                 android:layout_marginTop="120sp"
-                android:background="#fff"
                 android:alpha="@dimen/alphaDivider"
-                android:layout_alignTop="@+id/divider16"/>
+                android:background="#fff" />
 
             <TextView
                 android:id="@+id/eighteen"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/marginTime"
                 android:layout_below="@+id/seventeen"
-                android:text="18:00"/>
+                android:layout_marginTop="@dimen/marginTime"
+                android:text="18:00" />
 
             <View
                 android:id="@+id/divider18"
                 android:layout_width="match_parent"
                 android:layout_height="2dp"
+                android:layout_alignTop="@+id/divider17"
                 android:layout_marginStart="50dp"
                 android:layout_marginTop="120sp"
-                android:background="#fff"
                 android:alpha="@dimen/alphaDivider"
-                android:layout_alignTop="@+id/divider17"/>
+                android:background="#fff" />
 
             <TextView
                 android:id="@+id/nineteen"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/marginTime"
                 android:layout_below="@+id/eighteen"
-                android:text="19:00"/>
+                android:layout_marginTop="@dimen/marginTime"
+                android:text="19:00" />
 
             <View
                 android:id="@+id/divider19"
                 android:layout_width="match_parent"
                 android:layout_height="2dp"
+                android:layout_alignTop="@+id/divider18"
                 android:layout_marginStart="50dp"
                 android:layout_marginTop="120sp"
-                android:background="#fff"
                 android:alpha="@dimen/alphaDivider"
-                android:layout_alignTop="@+id/divider18"/>
+                android:background="#fff" />
 
             <TextView
                 android:id="@+id/twenty"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/marginTime"
                 android:layout_below="@+id/nineteen"
-                android:text="20:00"/>
+                android:layout_marginTop="@dimen/marginTime"
+                android:text="20:00" />
 
             <View
                 android:id="@+id/divider20"
                 android:layout_width="match_parent"
                 android:layout_height="2dp"
+                android:layout_alignTop="@+id/divider19"
                 android:layout_marginStart="50dp"
                 android:layout_marginTop="120sp"
-                android:background="#fff"
                 android:alpha="@dimen/alphaDivider"
-                android:layout_alignTop="@+id/divider19"/>
+                android:background="#fff" />
 
             <TextView
                 android:id="@+id/twentyone"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/marginTime"
                 android:layout_below="@+id/twenty"
-                android:text="21:00"/>
+                android:layout_marginTop="@dimen/marginTime"
+                android:text="21:00" />
 
             <View
                 android:id="@+id/divider21"
                 android:layout_width="match_parent"
                 android:layout_height="2dp"
+                android:layout_alignTop="@+id/divider20"
                 android:layout_marginStart="50dp"
                 android:layout_marginTop="120sp"
-                android:background="#fff"
                 android:alpha="@dimen/alphaDivider"
-                android:layout_alignTop="@+id/divider20"/>
+                android:background="#fff" />
 
             <TextView
                 android:id="@+id/twentytwo"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/marginTime"
                 android:layout_below="@+id/twentyone"
-                android:text="22:00"/>
+                android:layout_marginTop="@dimen/marginTime"
+                android:text="22:00" />
 
             <View
                 android:id="@+id/divider22"
                 android:layout_width="match_parent"
                 android:layout_height="2dp"
+                android:layout_alignTop="@+id/divider21"
                 android:layout_marginStart="50dp"
                 android:layout_marginTop="120sp"
-                android:background="#fff"
                 android:alpha="@dimen/alphaDivider"
-                android:layout_alignTop="@+id/divider21"/>
+                android:background="#fff" />
 
             <TextView
                 android:id="@+id/twentythree"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/marginTime"
                 android:layout_below="@+id/twentytwo"
-                android:text="23:00"/>
+                android:layout_marginTop="@dimen/marginTime"
+                android:text="23:00" />
 
             <View
                 android:id="@+id/divider23"
                 android:layout_width="match_parent"
                 android:layout_height="2dp"
+                android:layout_alignTop="@+id/divider22"
                 android:layout_marginStart="50dp"
                 android:layout_marginTop="120sp"
-                android:background="#fff"
                 android:alpha="@dimen/alphaDivider"
-                android:layout_alignTop="@+id/divider22"/>
+                android:background="#fff" />
 
             <TextView
                 android:id="@+id/zero"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/marginTime"
                 android:layout_below="@+id/twentythree"
-                android:text="00:00"/>
+                android:layout_marginTop="@dimen/marginTime"
+                android:text="00:00" />
 
             <View
                 android:id="@+id/divider0"
                 android:layout_width="match_parent"
                 android:layout_height="2dp"
+                android:layout_alignTop="@+id/divider23"
                 android:layout_marginStart="50dp"
                 android:layout_marginTop="120sp"
-                android:background="#fff"
                 android:alpha="@dimen/alphaDivider"
-                android:layout_alignTop="@+id/divider23"/>
+                android:background="#fff" />
 
             <TextView
                 android:id="@+id/one"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/marginTime"
                 android:layout_below="@+id/zero"
-                android:text="1:00"/>
+                android:layout_marginTop="@dimen/marginTime"
+                android:text="1:00" />
 
             <View
                 android:id="@+id/divider1"
                 android:layout_width="match_parent"
                 android:layout_height="2dp"
+                android:layout_alignTop="@+id/divider0"
                 android:layout_marginStart="50dp"
                 android:layout_marginTop="120sp"
-                android:background="#fff"
                 android:alpha="@dimen/alphaDivider"
-                android:layout_alignTop="@+id/divider0"/>
+                android:background="#fff" />
 
             <TextView
                 android:id="@+id/two"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/marginTime"
                 android:layout_below="@+id/one"
-                android:text="2:00"/>
+                android:layout_marginTop="@dimen/marginTime"
+                android:text="2:00" />
 
             <View
                 android:id="@+id/divider2"
                 android:layout_width="match_parent"
                 android:layout_height="2dp"
+                android:layout_alignTop="@+id/divider1"
                 android:layout_marginStart="50dp"
                 android:layout_marginTop="120sp"
-                android:background="#fff"
                 android:alpha="@dimen/alphaDivider"
-                android:layout_alignTop="@+id/divider1"/>
+                android:background="#fff" />
 
 
             <View
@@ -336,35 +348,38 @@
                 android:layout_height="95dp"
                 android:layout_alignTop="@+id/divider12"
                 android:layout_centerHorizontal="true"
-                android:background="@color/colorBackground"/>
+                android:background="@color/colorBackground" />
+
             <ImageView
                 android:layout_width="230sp"
                 android:layout_height="95dp"
-                android:scaleType="centerCrop"
                 android:layout_alignTop="@+id/divider12"
                 android:layout_centerHorizontal="true"
                 android:alpha="@dimen/alphaImg"
-                android:src="@drawable/mayan"/>
+                android:scaleType="centerCrop"
+                android:src="@drawable/mayan" />
+
             <TextView
                 android:id="@+id/mayan"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="15dp"
                 android:layout_below="@+id/divider12"
+                android:layout_marginTop="15dp"
+                android:text="MAYAN"
                 android:textAlignment="center"
                 android:textSize="20sp"
-                android:textStyle="bold"
-                android:text="MAYAN"/>
+                android:textStyle="bold" />
+
             <TextView
                 android:id="@+id/mayantime"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
                 android:layout_below="@+id/mayan"
+                android:layout_marginTop="10dp"
+                android:text="12:00 - 12:45"
                 android:textAlignment="center"
                 android:textSize="20sp"
-                android:textStyle="bold"
-                android:text="12:00 - 12:45"/>
+                android:textStyle="bold" />
 
 
             <View
@@ -372,340 +387,368 @@
                 android:layout_height="100sp"
                 android:layout_alignTop="@+id/divider13"
                 android:layout_centerHorizontal="true"
-                android:background="@color/colorBackground"/>
+                android:background="@color/colorBackground" />
+
             <ImageView
                 android:layout_width="230sp"
                 android:layout_height="100sp"
-                android:scaleType="centerCrop"
                 android:layout_alignTop="@+id/divider13"
                 android:layout_centerHorizontal="true"
                 android:alpha="@dimen/alphaImg"
-                android:src="@drawable/cyhra"/>
+                android:scaleType="centerCrop"
+                android:src="@drawable/cyhra" />
+
             <TextView
                 android:id="@+id/cyhra"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="15dp"
                 android:layout_below="@+id/divider13"
+                android:layout_marginTop="15dp"
+                android:text="CYHRA"
                 android:textAlignment="center"
                 android:textSize="20sp"
-                android:textStyle="bold"
-                android:text="CYHRA"/>
+                android:textStyle="bold" />
+
             <TextView
                 android:id="@+id/cyhratime"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
                 android:layout_below="@+id/cyhra"
+                android:layout_marginTop="10dp"
+                android:text="13:00 - 13:50"
                 android:textAlignment="center"
                 android:textSize="20sp"
-                android:textStyle="bold"
-                android:text="13:00 - 13:50"/>
+                android:textStyle="bold" />
 
             <View
                 android:layout_width="230sp"
                 android:layout_height="100sp"
                 android:layout_alignTop="@+id/divider14"
                 android:layout_centerHorizontal="true"
-                android:background="@color/colorBackground"/>
+                android:background="@color/colorBackground" />
+
             <ImageView
                 android:layout_width="230sp"
                 android:layout_height="100sp"
-                android:scaleType="centerCrop"
                 android:layout_alignTop="@+id/divider14"
                 android:layout_centerHorizontal="true"
                 android:alpha="@dimen/alphaImg"
-                android:src="@drawable/xandria"/>
+                android:scaleType="centerCrop"
+                android:src="@drawable/xandria" />
+
             <TextView
                 android:id="@+id/xandria"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="15dp"
                 android:layout_below="@+id/divider14"
+                android:layout_marginTop="15dp"
+                android:text="XANDRIA"
                 android:textAlignment="center"
                 android:textSize="20sp"
-                android:textStyle="bold"
-                android:text="XANDRIA"/>
+                android:textStyle="bold" />
+
             <TextView
                 android:id="@+id/xandriatime"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
                 android:layout_below="@+id/xandria"
+                android:layout_marginTop="10dp"
+                android:text="14:00 - 14:50"
                 android:textAlignment="center"
                 android:textSize="20sp"
-                android:textStyle="bold"
-                android:text="14:00 - 14:50"/>
+                android:textStyle="bold" />
 
             <View
                 android:layout_width="230sp"
                 android:layout_height="120sp"
-                android:layout_marginTop="10sp"
                 android:layout_alignTop="@+id/divider15"
                 android:layout_centerHorizontal="true"
-                android:background="@color/colorBackground"/>
+                android:layout_marginTop="10sp"
+                android:background="@color/colorBackground" />
+
             <ImageView
                 android:layout_width="230sp"
                 android:layout_height="120sp"
-                android:layout_marginTop="10sp"
-                android:scaleType="centerCrop"
                 android:layout_alignTop="@+id/divider15"
                 android:layout_centerHorizontal="true"
+                android:layout_marginTop="10sp"
                 android:alpha="@dimen/alphaImg"
-                android:src="@drawable/saltatio_mortis"/>
+                android:scaleType="centerCrop"
+                android:src="@drawable/saltatio_mortis" />
+
             <TextView
                 android:id="@+id/saltatioMortis"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="35sp"
                 android:layout_below="@+id/divider15"
+                android:layout_marginTop="35sp"
+                android:text="SALTATIO MORTIS"
                 android:textAlignment="center"
                 android:textSize="20sp"
-                android:textStyle="bold"
-                android:text="SALTATIO MORTIS"/>
+                android:textStyle="bold" />
+
             <TextView
                 android:id="@+id/saltatioMortisTime"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
                 android:layout_below="@+id/saltatioMortis"
+                android:layout_marginTop="10dp"
+                android:text="15:05 - 16:05"
                 android:textAlignment="center"
                 android:textSize="20sp"
-                android:textStyle="bold"
-                android:text="15:05 - 16:05"/>
+                android:textStyle="bold" />
 
             <View
                 android:layout_width="230sp"
                 android:layout_height="120sp"
-                android:layout_marginTop="50sp"
                 android:layout_alignTop="@+id/divider16"
                 android:layout_centerHorizontal="true"
-                android:background="@color/colorBackground"/>
+                android:layout_marginTop="50sp"
+                android:background="@color/colorBackground" />
+
             <ImageView
                 android:layout_width="230sp"
                 android:layout_height="120sp"
-                android:layout_marginTop="50sp"
-                android:scaleType="centerCrop"
                 android:layout_alignTop="@+id/divider16"
                 android:layout_centerHorizontal="true"
+                android:layout_marginTop="50sp"
                 android:alpha="@dimen/alphaImg"
-                android:src="@drawable/turilli_lione_rhapsody"/>
+                android:scaleType="centerCrop"
+                android:src="@drawable/turilli_lione_rhapsody" />
+
             <TextView
                 android:id="@+id/turilliLioneRhapsody"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="55sp"
                 android:layout_below="@+id/divider16"
+                android:layout_marginTop="55sp"
+                android:text="TRUILLI LIONE"
                 android:textAlignment="center"
                 android:textSize="20sp"
-                android:textStyle="bold"
-                android:text="TRUILLI LIONE"/>
+                android:textStyle="bold" />
+
             <TextView
                 android:id="@+id/turilliLioneRhapsody2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
                 android:layout_below="@+id/turilliLioneRhapsody"
+                android:layout_marginTop="10dp"
+                android:text="RHAPSODY"
                 android:textAlignment="center"
                 android:textSize="20sp"
-                android:textStyle="bold"
-                android:text="RHAPSODY"/>
+                android:textStyle="bold" />
+
             <TextView
                 android:id="@+id/turilliLioneRhapsodyTime"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
                 android:layout_below="@+id/turilliLioneRhapsody2"
+                android:layout_marginTop="10dp"
+                android:text="16:25 - 17:25"
                 android:textAlignment="center"
                 android:textSize="20sp"
-                android:textStyle="bold"
-                android:text="16:25 - 17:25"/>
+                android:textStyle="bold" />
 
             <View
                 android:layout_width="230sp"
                 android:layout_height="120sp"
-                android:layout_marginTop="90sp"
                 android:layout_alignTop="@+id/divider17"
                 android:layout_centerHorizontal="true"
-                android:background="@color/colorBackground"/>
+                android:layout_marginTop="90sp"
+                android:background="@color/colorBackground" />
+
             <ImageView
                 android:layout_width="230sp"
                 android:layout_height="120sp"
-                android:layout_marginTop="90sp"
-                android:scaleType="centerCrop"
                 android:layout_alignTop="@+id/divider17"
                 android:layout_centerHorizontal="true"
+                android:layout_marginTop="90sp"
                 android:alpha="@dimen/alphaImg"
-                android:src="@drawable/delain"/>
+                android:scaleType="centerCrop"
+                android:src="@drawable/delain" />
+
             <TextView
                 android:id="@+id/delain"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="125sp"
                 android:layout_below="@+id/divider17"
+                android:layout_marginTop="125sp"
+                android:text="DELAIN"
                 android:textAlignment="center"
                 android:textSize="20sp"
-                android:textStyle="bold"
-                android:text="DELAIN"/>
+                android:textStyle="bold" />
+
             <TextView
                 android:id="@+id/delainTime"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
                 android:layout_below="@+id/delain"
+                android:layout_marginTop="10dp"
+                android:text="17:45 - 18:45"
                 android:textAlignment="center"
                 android:textSize="20sp"
-                android:textStyle="bold"
-                android:text="17:45 - 18:45"/>
+                android:textStyle="bold" />
 
 
             <View
                 android:layout_width="230sp"
                 android:layout_height="140sp"
-                android:layout_marginTop="20sp"
                 android:layout_alignTop="@+id/divider19"
                 android:layout_centerHorizontal="true"
-                android:background="@color/colorBackground"/>
+                android:layout_marginTop="20sp"
+                android:background="@color/colorBackground" />
+
             <ImageView
                 android:layout_width="230sp"
                 android:layout_height="140sp"
-                android:layout_marginTop="20sp"
-                android:scaleType="centerCrop"
                 android:layout_alignTop="@+id/divider19"
                 android:layout_centerHorizontal="true"
+                android:layout_marginTop="20sp"
                 android:alpha="@dimen/alphaImg"
-                android:src="@drawable/gamma_ray"/>
+                android:scaleType="centerCrop"
+                android:src="@drawable/gamma_ray" />
+
             <TextView
                 android:id="@+id/gammaRay"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="55sp"
                 android:layout_below="@+id/divider19"
+                android:layout_marginTop="55sp"
+                android:text="GAMMA RAY"
                 android:textAlignment="center"
                 android:textSize="20sp"
-                android:textStyle="bold"
-                android:text="GAMMA RAY"/>
+                android:textStyle="bold" />
+
             <TextView
                 android:id="@+id/gammaRayTime"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
                 android:layout_below="@+id/gammaRay"
+                android:layout_marginTop="10dp"
+                android:text="19:10 - 20:20"
                 android:textAlignment="center"
                 android:textSize="20sp"
-                android:textStyle="bold"
-                android:text="19:10 - 20:20"/>
+                android:textStyle="bold" />
 
             <View
                 android:layout_width="230sp"
                 android:layout_height="160sp"
-                android:layout_marginTop="100sp"
                 android:layout_alignTop="@+id/divider20"
                 android:layout_centerHorizontal="true"
-                android:background="@color/colorBackground"/>
+                android:layout_marginTop="100sp"
+                android:background="@color/colorBackground" />
+
             <ImageView
                 android:layout_width="230sp"
                 android:layout_height="160sp"
-                android:layout_marginTop="100sp"
-                android:scaleType="centerCrop"
                 android:layout_alignTop="@+id/divider20"
                 android:layout_centerHorizontal="true"
+                android:layout_marginTop="100sp"
                 android:alpha="@dimen/alphaImg"
-                android:src="@drawable/eluveitie"/>
+                android:scaleType="centerCrop"
+                android:src="@drawable/eluveitie" />
+
             <TextView
                 android:id="@+id/eluveitie"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="155sp"
                 android:layout_below="@+id/divider20"
+                android:layout_marginTop="155sp"
+                android:text="ELUVEITIE"
                 android:textAlignment="center"
                 android:textSize="20sp"
-                android:textStyle="bold"
-                android:text="ELUVEITIE"/>
+                android:textStyle="bold" />
+
             <TextView
                 android:id="@+id/eluveitieTime"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
                 android:layout_below="@+id/eluveitie"
+                android:layout_marginTop="10dp"
+                android:text="20:50 - 22:10"
                 android:textAlignment="center"
                 android:textSize="20sp"
-                android:textStyle="bold"
-                android:text="20:50 - 22:10"/>
+                android:textStyle="bold" />
 
             <View
                 android:layout_width="230sp"
                 android:layout_height="180sp"
-                android:layout_marginTop="100sp"
                 android:layout_alignTop="@+id/divider22"
                 android:layout_centerHorizontal="true"
-                android:background="@color/colorBackground"/>
+                android:layout_marginTop="100sp"
+                android:background="@color/colorBackground" />
+
             <ImageView
                 android:layout_width="230sp"
                 android:layout_height="180sp"
-                android:layout_marginTop="100sp"
-                android:scaleType="centerCrop"
                 android:layout_alignTop="@+id/divider22"
                 android:layout_centerHorizontal="true"
+                android:layout_marginTop="100sp"
                 android:alpha="@dimen/alphaImg"
-                android:src="@drawable/uriah_heep"/>
+                android:scaleType="centerCrop"
+                android:src="@drawable/uriah_heep" />
+
             <TextView
                 android:id="@+id/uriahHeep"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="155sp"
                 android:layout_below="@+id/divider22"
+                android:layout_marginTop="155sp"
+                android:text="URIAH HEEP"
                 android:textAlignment="center"
                 android:textSize="20sp"
-                android:textStyle="bold"
-                android:text="URIAH HEEP"/>
+                android:textStyle="bold" />
+
             <TextView
                 android:id="@+id/uriahHeepTime"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
                 android:layout_below="@+id/uriahHeep"
+                android:layout_marginTop="10dp"
+                android:text="22:50 - 0:20"
                 android:textAlignment="center"
                 android:textSize="20sp"
-                android:textStyle="bold"
-                android:text="22:50 - 0:20"/>
+                android:textStyle="bold" />
 
             <View
                 android:layout_width="230sp"
                 android:layout_height="140sp"
-                android:layout_marginTop="100sp"
                 android:layout_alignTop="@+id/divider0"
                 android:layout_centerHorizontal="true"
-                android:background="@color/colorBackground"/>
+                android:layout_marginTop="100sp"
+                android:background="@color/colorBackground" />
+
             <ImageView
                 android:layout_width="230sp"
                 android:layout_height="140sp"
-                android:layout_marginTop="100sp"
-                android:scaleType="centerCrop"
                 android:layout_alignTop="@+id/divider0"
                 android:layout_centerHorizontal="true"
+                android:layout_marginTop="100sp"
                 android:alpha="@dimen/alphaImg"
-                android:src="@drawable/deathstars"/>
+                android:scaleType="centerCrop"
+                android:src="@drawable/deathstars" />
+
             <TextView
                 android:id="@+id/deathstars"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="135sp"
                 android:layout_below="@+id/divider0"
+                android:layout_marginTop="135sp"
+                android:text="DEATHSTARS"
                 android:textAlignment="center"
                 android:textSize="20sp"
-                android:textStyle="bold"
-                android:text="DEATHSTARS"/>
+                android:textStyle="bold" />
+
             <TextView
                 android:id="@+id/deathstarsTime"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
                 android:layout_below="@+id/deathstars"
+                android:layout_marginTop="10dp"
+                android:text="0:50 - 2:00"
                 android:textAlignment="center"
                 android:textSize="20sp"
-                android:textStyle="bold"
-                android:text="0:50 - 2:00"/>
+                android:textStyle="bold" />
 
         </RelativeLayout>
 
