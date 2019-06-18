@@ -2,11 +2,14 @@ package com.mor.fragments;
 
 import android.animation.AnimatorSet;
 import android.animation.ObjectAnimator;
+import android.content.res.Resources;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.util.TypedValue;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.RelativeLayout;
 import android.widget.ScrollView;
 import com.mor.MainActivity;
 import com.mor.R;
@@ -21,9 +24,6 @@ public class Ctvrtek extends Fragment {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         getActivity().setTitle(NavigationDrawerConstants.TAG_Ctvrtek);
-
-
-
     }
 
     @Override
@@ -35,10 +35,12 @@ public class Ctvrtek extends Fragment {
         int id = (R.id.ten);
 
         Calendar cal = Calendar.getInstance();
-        final int hour = cal.get(Calendar.HOUR_OF_DAY);
+        int hour = cal.get(Calendar.HOUR_OF_DAY);
         int day = cal.get(Calendar.DAY_OF_MONTH);
         int month = cal.get(Calendar.MONTH);
+        int minute = cal.get(Calendar.MINUTE);
 
+        boolean showPointer = false;
         if (month == 6 && day == 11) {
             switch (hour) {
                 case 12:
@@ -80,6 +82,7 @@ public class Ctvrtek extends Fragment {
                 default:
                     id = (R.id.ten);
             }
+            showPointer = true;
         } else if (month == 6 && day == 12 && hour <= 2) {
             switch (hour) {
                 case 0:
@@ -94,21 +97,29 @@ public class Ctvrtek extends Fragment {
                 default:
                     id = (R.id.ten);
             }
+            hour = hour + 24;
+            showPointer = true;
         }
-
 
         final View targetView = view.findViewById(id);
         final ScrollView sv = view.findViewById(R.id.scrollViewId);
-        final View pointer = view.findViewById(R.id.pointerId);
+        final View pointer = view.findViewById(R.id.pointerCtvrtekId);
 
+        if (showPointer) {
+            int pointerPosition = ((hour - 10) * 120) + (minute * 2) + 43 - 4;
 
-        int posunInt = 120 + 365 + 365 + 365; //TODO posu pointeru podle aktuálního času
-        float posunF = posunInt;
+            Resources r = getActivity().getResources();
+            int px = (int) TypedValue.applyDimension(
+                    TypedValue.COMPLEX_UNIT_DIP,
+                    pointerPosition,
+                    r.getDisplayMetrics()
+            );
 
-        ObjectAnimator animY = ObjectAnimator.ofFloat(pointer, "y", posunF);
-        AnimatorSet animSetXY = new AnimatorSet();
-        animSetXY.playTogether(animY);
-        animSetXY.start();
+            ObjectAnimator animY = ObjectAnimator.ofFloat(pointer, "y", px);
+            AnimatorSet animSetXY = new AnimatorSet();
+            animSetXY.playTogether(animY);
+            animSetXY.start();
+        } else {pointer.setVisibility(View.INVISIBLE);}
 
         sv.post(new Runnable() {
             @Override
@@ -117,9 +128,6 @@ public class Ctvrtek extends Fragment {
 
             }
         });
-
-
-
         return view;
     }
 

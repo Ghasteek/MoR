@@ -60,6 +60,22 @@ public class MainActivity extends AppCompatActivity
         tools.setTitle(s);
         navigationView.setNavigationItemSelectedListener(this);
 
+        /*Calendar cal = Calendar.getInstance();
+        int day = cal.get(Calendar.DAY_OF_MONTH);
+        int month = cal.get(Calendar.MONTH);
+        int hour = cal.get(Calendar.HOUR_OF_DAY);
+
+        Fragment fragment = new Ctvrtek();
+
+        if ((month == 6 && day == 12 && hour >= 3) || (month == 6 && day == 13 && hour <= 2)) {fragment = new Patek();navigationView.setCheckedItem(R.id.drawerPatek);}
+        else if ((month == 6 && day == 13) || (month == 6 && day == 14 && hour <= 2)) {fragment = new Sobota();navigationView.setCheckedItem(R.id.drawerSobota);}
+        else if ((month == 6 && day == 14) || (month == 6 && day == 15 && hour <= 2)) {fragment = new Nedele(); navigationView.setCheckedItem(R.id.drawerNedele);}
+
+        displaySelectedFragment(fragment);*/
+        showToday();
+    }
+
+    public void showToday() {
         Calendar cal = Calendar.getInstance();
         int day = cal.get(Calendar.DAY_OF_MONTH);
         int month = cal.get(Calendar.MONTH);
@@ -72,6 +88,12 @@ public class MainActivity extends AppCompatActivity
         else if ((month == 6 && day == 14) || (month == 6 && day == 15 && hour <= 2)) {fragment = new Nedele(); navigationView.setCheckedItem(R.id.drawerNedele);}
 
         displaySelectedFragment(fragment);
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+        showToday();
     }
 
     @Override
@@ -127,6 +149,27 @@ public class MainActivity extends AppCompatActivity
         FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
         fragmentTransaction.replace(R.id.frame, fragment);
         fragmentTransaction.commit();
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        // Handle action bar item clicks here. The action bar will
+        // automatically handle clicks on the Home/Up button, so long
+
+        // as you specify a parent activity in AndroidManifest.xml.
+        switch (item.getItemId()) {
+            case (R.id.actionRefresh):
+                showToday();
+                break;
+        }
+        return super.onOptionsItemSelected(item);
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.main, menu);
+        return true;
     }
 
     @SuppressWarnings("WeakerAccess")

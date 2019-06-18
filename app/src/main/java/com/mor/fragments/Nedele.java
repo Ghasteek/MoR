@@ -1,7 +1,11 @@
 package com.mor.fragments;
 
+import android.animation.AnimatorSet;
+import android.animation.ObjectAnimator;
+import android.content.res.Resources;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.util.TypedValue;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -34,6 +38,8 @@ public class Nedele extends Fragment {
         int hour = cal.get(Calendar.HOUR_OF_DAY);
         int day = cal.get(Calendar.DAY_OF_MONTH);
         int month = cal.get(Calendar.MONTH);
+        int minute = cal.get(Calendar.MINUTE);
+        boolean showPointer = false;
 
         if (month == 6 && day == 14 && hour >=3) {
             switch (hour) {
@@ -76,6 +82,7 @@ public class Nedele extends Fragment {
                 default:
                     id = (R.id.ten);
             }
+            showPointer = true;
         } else if (month == 6 && day == 15 && hour <= 2) {
             switch (hour) {
                 case 0:
@@ -90,18 +97,37 @@ public class Nedele extends Fragment {
                 default:
                     id = (R.id.ten);
             }
+            hour = hour + 24;
+            showPointer = true;
         }
-
 
         final View targetView = view.findViewById(id);
         final ScrollView sv = view.findViewById(R.id.scrollViewId);
+        final View pointer = view.findViewById(R.id.pointerNedeleId);
+
+        if (showPointer) {
+            int pointerPosition = ((hour - 10) * 120) + (minute * 2) + 43 - 4;
+
+            Resources r = getActivity().getResources();
+            int px = (int) TypedValue.applyDimension(
+                    TypedValue.COMPLEX_UNIT_DIP,
+                    pointerPosition,
+                    r.getDisplayMetrics()
+            );
+
+            ObjectAnimator animY = ObjectAnimator.ofFloat(pointer, "y", px);
+            AnimatorSet animSetXY = new AnimatorSet();
+            animSetXY.playTogether(animY);
+            animSetXY.start();
+        } else {pointer.setVisibility(View.INVISIBLE);}
+
         sv.post(new Runnable() {
             @Override
             public void run() {
                 sv.scrollTo(0, targetView.getTop());
+
             }
         });
-
         return view;
     }
 

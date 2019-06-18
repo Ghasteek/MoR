@@ -43,6 +43,16 @@
                 android:alpha="@dimen/alphaDivider"
                 android:layout_alignTop="@+id/ten"/>
 
+            <View
+                android:id="@+id/pointerPatekId"
+                android:layout_width="match_parent"
+                android:layout_height="8sp"
+                android:layout_alignTop="@+id/ten"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="8sp"
+                android:alpha="@dimen/alphaPointer"
+                android:background="@color/colorRed"/>
+
             <TextView
                 android:id="@+id/eleven"
                 android:layout_width="match_parent"

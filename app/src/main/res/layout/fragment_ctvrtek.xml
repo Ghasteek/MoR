@@ -35,14 +35,14 @@
                 android:text="10:00" />
 
             <View
-                android:id="@+id/pointerId"
+                android:id="@+id/pointerCtvrtekId"
                 android:layout_width="match_parent"
-                android:layout_height="15sp"
+                android:layout_height="8sp"
                 android:layout_alignTop="@+id/ten"
                 android:layout_marginStart="50dp"
                 android:layout_marginTop="8sp"
-                android:alpha="@dimen/alphaDivider"
-                android:background="#F84CAF50" />
+                android:alpha="@dimen/alphaPointer"
+                android:background="@color/colorRed"/>
 
             <View
                 android:id="@+id/divider10"
