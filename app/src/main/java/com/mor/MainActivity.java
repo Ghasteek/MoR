@@ -10,17 +10,18 @@ import android.text.style.TextAppearanceSpan;
 import android.view.MenuItem;
 import android.support.design.widget.NavigationView;
 import android.support.v4.widget.DrawerLayout;
-
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
-
 import com.mor.fragments.Ctvrtek;
 import com.mor.fragments.Patek;
 import com.mor.fragments.Sobota;
 import com.mor.fragments.Nedele;
+import com.mor.fragments.Ctvrtek2Stage;
+import com.mor.fragments.Patek2Stage;
+import com.mor.fragments.Sobota2Stage;
+import com.mor.fragments.Nedele2Stage;
 import com.mor.fragments.About;
-
 import java.util.Calendar;
 
 
@@ -60,18 +61,12 @@ public class MainActivity extends AppCompatActivity
         tools.setTitle(s);
         navigationView.setNavigationItemSelectedListener(this);
 
-        /*Calendar cal = Calendar.getInstance();
-        int day = cal.get(Calendar.DAY_OF_MONTH);
-        int month = cal.get(Calendar.MONTH);
-        int hour = cal.get(Calendar.HOUR_OF_DAY);
+        MenuItem tools2= myMenu.findItem(R.id.program2stage);
+        SpannableString s2 = new SpannableString(tools2.getTitle());
+        s2.setSpan(new TextAppearanceSpan(this, R.style.MyTheme), 0, s2.length(), 0);
+        tools2.setTitle(s2);
+        navigationView.setNavigationItemSelectedListener(this);
 
-        Fragment fragment = new Ctvrtek();
-
-        if ((month == 6 && day == 12 && hour >= 3) || (month == 6 && day == 13 && hour <= 2)) {fragment = new Patek();navigationView.setCheckedItem(R.id.drawerPatek);}
-        else if ((month == 6 && day == 13) || (month == 6 && day == 14 && hour <= 2)) {fragment = new Sobota();navigationView.setCheckedItem(R.id.drawerSobota);}
-        else if ((month == 6 && day == 14) || (month == 6 && day == 15 && hour <= 2)) {fragment = new Nedele(); navigationView.setCheckedItem(R.id.drawerNedele);}
-
-        displaySelectedFragment(fragment);*/
         showToday();
     }
 
@@ -83,9 +78,9 @@ public class MainActivity extends AppCompatActivity
 
         Fragment fragment = new Ctvrtek();
 
-        if ((month == 6 && day == 12 && hour >= 3) || (month == 6 && day == 13 && hour <= 2)) {fragment = new Patek();navigationView.setCheckedItem(R.id.drawerPatek);}
-        else if ((month == 6 && day == 13) || (month == 6 && day == 14 && hour <= 2)) {fragment = new Sobota();navigationView.setCheckedItem(R.id.drawerSobota);}
-        else if ((month == 6 && day == 14) || (month == 6 && day == 15 && hour <= 2)) {fragment = new Nedele(); navigationView.setCheckedItem(R.id.drawerNedele);}
+        if ((month == 6 && day == 12 && hour >= 3) || (month == 6 && day == 13 && hour <= 2)) {fragment = new Patek();navigationView.setCheckedItem(R.id.drawerPatek); navigationView.getMenu().getItem(2).setChecked(true);}
+        else if ((month == 6 && day == 13) || (month == 6 && day == 14 && hour <= 2)) {fragment = new Sobota();navigationView.setCheckedItem(R.id.drawerSobota); navigationView.getMenu().getItem(3).setChecked(true);}
+        else if ((month == 6 && day == 14) || (month == 6 && day == 15 && hour <= 2)) {fragment = new Nedele(); navigationView.setCheckedItem(R.id.drawerNedele); navigationView.getMenu().getItem(4).setChecked(true);}
 
         displaySelectedFragment(fragment);
     }
@@ -131,6 +126,18 @@ public class MainActivity extends AppCompatActivity
         } else if (id == R.id.drawerAbout) {
             fragment = new About();
             displaySelectedFragment(fragment);
+        } else if (id == R.id.drawerCtvrtek2stage) {
+            fragment = new Ctvrtek2Stage();
+            displaySelectedFragment(fragment);
+        }  else if (id == R.id.drawerPatek2stage) {
+            fragment = new Patek2Stage();
+            displaySelectedFragment(fragment);
+        } else if (id == R.id.drawerSobota2stage) {
+            fragment = new Sobota2Stage();
+            displaySelectedFragment(fragment);
+        } else if (id == R.id.drawerNedele2stage) {
+            fragment = new Nedele2Stage();
+            displaySelectedFragment(fragment);
         }
 
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
@@ -151,7 +158,8 @@ public class MainActivity extends AppCompatActivity
         fragmentTransaction.commit();
     }
 
-    @Override
+    /*
+    @Override                                                                                       // zobrazeni menu - není třeba, pro jistotu jen zakomentováno
     public boolean onOptionsItemSelected(MenuItem item) {
         // Handle action bar item clicks here. The action bar will
         // automatically handle clicks on the Home/Up button, so long
@@ -170,10 +178,5 @@ public class MainActivity extends AppCompatActivity
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.main, menu);
         return true;
-    }
-
-    @SuppressWarnings("WeakerAccess")
-    public static class Globals {
-        public static String messageStr;
-    }
+    }*/
 }

@@ -5,7 +5,7 @@
 
     <item
         android:id="@+id/program"
-        android:title="Program">
+        android:title="Ronnie James Dio Stage">
         <menu>
             <group
                 android:checkableBehavior="single">
@@ -29,10 +29,27 @@
         </menu>
     </item>
     <item
-        android:id="@+id/ostatni">
+        android:id="@+id/program2stage"
+        android:title="FWcare Stage">
         <menu>
             <group
                 android:checkableBehavior="single">
+                <item
+                    android:id="@+id/drawerCtvrtek2stage"
+                    android:icon="@drawable/ic_menu_send"
+                    android:title="@string/drawerCtvrtek" />
+                <item
+                    android:id="@+id/drawerPatek2stage"
+                    android:icon="@drawable/ic_menu_send"
+                    android:title="@string/drawerPatek" />
+                <item
+                    android:id="@+id/drawerSobota2stage"
+                    android:icon="@drawable/ic_menu_send"
+                    android:title="@string/drawerSobota" />
+                <item
+                    android:id="@+id/drawerNedele2stage"
+                    android:icon="@drawable/ic_menu_send"
+                    android:title="@string/drawerNedele" />
                 <item
                     android:id="@+id/drawerAbout"
                     android:icon="@android:drawable/ic_menu_info_details"
@@ -40,6 +57,4 @@
             </group>
         </menu>
     </item>
-
-
 </menu>

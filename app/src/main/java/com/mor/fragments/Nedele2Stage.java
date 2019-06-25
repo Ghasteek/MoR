@@ -10,24 +10,27 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ScrollView;
+
 import com.mor.R;
 import com.mor.constants.NavigationDrawerConstants;
+
 import java.util.Calendar;
 
 
-public class Patek extends Fragment {
+public class Nedele2Stage extends Fragment {
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        getActivity().setTitle(NavigationDrawerConstants.TAG_Patek);
+        getActivity().setTitle(NavigationDrawerConstants.TAG_Nedele2Stage);
+
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View view = inflater.inflate(R.layout.fragment_patek, container, false);
+        View view = inflater.inflate(R.layout.fragment_nedele2_stage, container, false);
 
         int id = (R.id.ten);
 
@@ -36,9 +39,9 @@ public class Patek extends Fragment {
         int day = cal.get(Calendar.DAY_OF_MONTH);
         int month = cal.get(Calendar.MONTH);
         int minute = cal.get(Calendar.MINUTE);
-
         boolean showPointer = false;
-        if (month == 6 && day == 12 && hour >= 3) {
+
+        if (month == 6 && day == 14 && hour >=3) {
             switch (hour) {
                 case 12:
                     id = (R.id.eleven);
@@ -80,7 +83,7 @@ public class Patek extends Fragment {
                     id = (R.id.ten);
             }
             showPointer = true;
-        } else if (month == 6 && day == 13 && hour <= 2) {
+        } else if (month == 6 && day == 15 && hour <= 2) {
             switch (hour) {
                 case 0:
                     id = (R.id.twentythree);
@@ -100,7 +103,7 @@ public class Patek extends Fragment {
 
         final View targetView = view.findViewById(id);
         final ScrollView sv = view.findViewById(R.id.scrollViewId);
-        final View pointer = view.findViewById(R.id.pointerPatekId);
+        final View pointer = view.findViewById(R.id.pointerNedele2StageId);
 
         if (showPointer) {
             int pointerPosition = ((hour - 10) * 120) + (minute * 2) + 43 - 4;

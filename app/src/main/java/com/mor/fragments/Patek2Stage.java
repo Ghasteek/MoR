@@ -15,19 +15,19 @@ import com.mor.constants.NavigationDrawerConstants;
 import java.util.Calendar;
 
 
-public class Patek extends Fragment {
+public class Patek2Stage extends Fragment {
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        getActivity().setTitle(NavigationDrawerConstants.TAG_Patek);
+        getActivity().setTitle(NavigationDrawerConstants.TAG_Patek2Stage);
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View view = inflater.inflate(R.layout.fragment_patek, container, false);
+        View view = inflater.inflate(R.layout.fragment_patek2_stage, container, false);
 
         int id = (R.id.ten);
 
@@ -100,7 +100,7 @@ public class Patek extends Fragment {
 
         final View targetView = view.findViewById(id);
         final ScrollView sv = view.findViewById(R.id.scrollViewId);
-        final View pointer = view.findViewById(R.id.pointerPatekId);
+        final View pointer = view.findViewById(R.id.pointerPatek2StageId);
 
         if (showPointer) {
             int pointerPosition = ((hour - 10) * 120) + (minute * 2) + 43 - 4;
