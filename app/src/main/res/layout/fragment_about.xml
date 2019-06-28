@@ -18,10 +18,19 @@
             android:layout_marginTop="180sp"/>
 
         <TextView
-            android:id="@+id/author"
+            android:id="@+id/version"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignBottom="@+id/logo"
+            android:layout_centerHorizontal="true"
+            android:text="Masters Of Rock 2019 - v1.0"/>
+
+        <TextView
+            android:id="@+id/author"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/version"
+            android:layout_marginTop="30sp"
             android:layout_centerHorizontal="true"
             android:text="Autor: Tomáš Podolský"/>
 
