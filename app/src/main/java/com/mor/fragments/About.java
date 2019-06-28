@@ -1,13 +1,14 @@
 package com.mor.fragments;
 
 import android.os.Bundle;
+import android.support.annotation.NonNull;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-
 import com.mor.R;
 import com.mor.constants.NavigationDrawerConstants;
+import java.util.Objects;
 
 
 public class About extends Fragment {
@@ -17,11 +18,11 @@ public class About extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        getActivity().setTitle(NavigationDrawerConstants.TAG_About);
+        Objects.requireNonNull(getActivity()).setTitle(NavigationDrawerConstants.TAG_About);
     }
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+    public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_about, container, false);

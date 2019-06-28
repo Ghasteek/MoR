@@ -1,6 +1,7 @@
 package com.mor;
 
 import android.os.Bundle;
+import android.support.annotation.NonNull;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v4.view.GravityCompat;
@@ -65,7 +66,7 @@ public class MainActivity extends AppCompatActivity
         SpannableString s2 = new SpannableString(tools2.getTitle());
         s2.setSpan(new TextAppearanceSpan(this, R.style.MyTheme), 0, s2.length(), 0);
         tools2.setTitle(s2);
-        navigationView.setNavigationItemSelectedListener(this);
+
 
         showToday();
     }
@@ -81,6 +82,7 @@ public class MainActivity extends AppCompatActivity
         if ((month == 6 && day == 12 && hour >= 3) || (month == 6 && day == 13 && hour <= 2)) {fragment = new Patek();navigationView.setCheckedItem(R.id.drawerPatek);}
         else if ((month == 6 && day == 13) || (month == 6 && day == 14 && hour <= 2)) {fragment = new Sobota();navigationView.setCheckedItem(R.id.drawerSobota);}
         else if ((month == 6 && day == 14) || (month == 6 && day == 15 && hour <= 2)) {fragment = new Nedele(); navigationView.setCheckedItem(R.id.drawerNedele);}
+        else {navigationView.setCheckedItem(R.id.drawerCtvrtek);}
 
         displaySelectedFragment(fragment);
     }
@@ -103,7 +105,7 @@ public class MainActivity extends AppCompatActivity
 
 
     @Override
-    public boolean onNavigationItemSelected(MenuItem item) {
+    public boolean onNavigationItemSelected(@NonNull MenuItem item) {
         // Handle navigation view item clicks here.
         Fragment fragment;
         int id = item.getItemId();

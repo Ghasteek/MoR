@@ -37,7 +37,7 @@
             <View
                 android:id="@+id/pointerCtvrtekId"
                 android:layout_width="match_parent"
-                android:layout_height="8sp"
+                android:layout_height="8dp"
                 android:layout_alignTop="@+id/ten"
                 android:layout_marginStart="50dp"
                 android:layout_marginTop="8sp"
@@ -357,7 +357,8 @@
                 android:layout_centerHorizontal="true"
                 android:alpha="@dimen/alphaImg"
                 android:scaleType="centerCrop"
-                android:src="@drawable/mayan" />
+                android:src="@drawable/mayan"
+                android:contentDescription="Obrázek skupiny"/>
 
             <TextView
                 android:id="@+id/mayan"
@@ -396,7 +397,8 @@
                 android:layout_centerHorizontal="true"
                 android:alpha="@dimen/alphaImg"
                 android:scaleType="centerCrop"
-                android:src="@drawable/cyhra" />
+                android:src="@drawable/cyhra"
+                android:contentDescription="Obrázek skupiny"/>
 
             <TextView
                 android:id="@+id/cyhra"
@@ -434,7 +436,8 @@
                 android:layout_centerHorizontal="true"
                 android:alpha="@dimen/alphaImg"
                 android:scaleType="centerCrop"
-                android:src="@drawable/xandria" />
+                android:src="@drawable/xandria"
+                android:contentDescription="Obrázek skupiny"/>
 
             <TextView
                 android:id="@+id/xandria"
@@ -474,7 +477,8 @@
                 android:layout_marginTop="10sp"
                 android:alpha="@dimen/alphaImg"
                 android:scaleType="centerCrop"
-                android:src="@drawable/saltatio_mortis" />
+                android:src="@drawable/saltatio_mortis"
+                android:contentDescription="Obrázek skupiny"/>
 
             <TextView
                 android:id="@+id/saltatioMortis"

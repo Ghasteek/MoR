@@ -4,6 +4,7 @@ import android.animation.AnimatorSet;
 import android.animation.ObjectAnimator;
 import android.content.res.Resources;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
 import android.support.v4.app.Fragment;
 import android.util.TypedValue;
 import android.view.LayoutInflater;
@@ -15,6 +16,7 @@ import com.mor.R;
 import com.mor.constants.NavigationDrawerConstants;
 
 import java.util.Calendar;
+import java.util.Objects;
 
 
 public class Nedele extends Fragment {
@@ -22,12 +24,12 @@ public class Nedele extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        getActivity().setTitle(NavigationDrawerConstants.TAG_Nedele);
+        Objects.requireNonNull(getActivity()).setTitle(NavigationDrawerConstants.TAG_Nedele);
 
     }
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+    public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_nedele, container, false);
@@ -108,7 +110,7 @@ public class Nedele extends Fragment {
         if (showPointer) {
             int pointerPosition = ((hour - 10) * 120) + (minute * 2) + 43 - 4;
 
-            Resources r = getActivity().getResources();
+            Resources r = Objects.requireNonNull(getActivity()).getResources();
             int px = (int) TypedValue.applyDimension(
                     TypedValue.COMPLEX_UNIT_DIP,
                     pointerPosition,

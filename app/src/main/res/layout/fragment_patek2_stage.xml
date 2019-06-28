@@ -30,7 +30,7 @@
             <View
                 android:id="@+id/pointerPatek2StageId"
                 android:layout_width="match_parent"
-                android:layout_height="8sp"
+                android:layout_height="8dp"
                 android:layout_alignTop="@+id/ten"
                 android:layout_marginStart="50dp"
                 android:layout_marginTop="8sp"
