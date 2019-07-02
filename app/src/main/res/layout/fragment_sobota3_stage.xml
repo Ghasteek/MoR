@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.Sobota3Stage">
+
+    <ScrollView
+        android:id="@+id/scrollViewId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:isScrollContainer="false">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/darkGamballe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/rozestupKapely"
+                android:paddingStart="@dimen/rozestupKapelyL"
+                android:text="12:00 - 12:30 - DARK GAMBALLE" />
+            <TextView
+                android:id="@+id/nightFlightOrchestra"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/darkGamballe"
+                android:paddingTop="@dimen/rozestupKapely"
+                android:paddingStart="@dimen/rozestupKapelyL"
+                android:text="12:45 - 13:15 - THE NIGHT FLIGHT ORCHESTRA" />
+            <TextView
+                android:id="@+id/legionOfThEeDamned"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/nightFlightOrchestra"
+                android:paddingTop="@dimen/rozestupKapely"
+                android:paddingStart="@dimen/rozestupKapelyL"
+                android:text="13:30 - 14:00 - LEGION OF THE DAMNED" />
+            <TextView
+                android:id="@+id/triStateCorner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/legionOfThEeDamned"
+                android:paddingTop="@dimen/rozestupKapely"
+                android:paddingStart="@dimen/rozestupKapelyL"
+                android:text="14:15 - 14:45 - TRI STATE CORNER" />
+            <TextView
+                android:id="@+id/followTheCipher"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/triStateCorner"
+                android:paddingTop="@dimen/rozestupKapely"
+                android:paddingStart="@dimen/rozestupKapelyL"
+                android:text="15:00 - 15:30 - FOLLOW THE CIPHER" />
+            <TextView
+                android:id="@+id/rage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/followTheCipher"
+                android:paddingTop="@dimen/rozestupKapely"
+                android:paddingStart="@dimen/rozestupKapelyL"
+                android:text="15:45 - 16:15 - RAGE" />
+            <TextView
+                android:id="@+id/brainstorm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rage"
+                android:paddingTop="@dimen/rozestupKapely"
+                android:paddingStart="@dimen/rozestupKapelyL"
+                android:text="16:30 - 17:00 - BRAINSTORM" />
+            <TextView
+                android:id="@+id/withinTemptation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/brainstorm"
+                android:paddingTop="@dimen/rozestupKapely"
+                android:paddingStart="@dimen/rozestupKapelyL"
+                android:text="17:15 - 17:45 - WITHIN TEMPTATION" />
+            <TextView
+                android:id="@+id/tarja"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/withinTemptation"
+                android:paddingTop="@dimen/rozestupKapely"
+                android:paddingStart="@dimen/rozestupKapelyL"
+                android:text="18:00 - 18:30 - TARJA" />
+            <TextView
+                android:id="@+id/firewind"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tarja"
+                android:paddingTop="@dimen/rozestupKapely"
+                android:paddingStart="@dimen/rozestupKapelyL"
+                android:text="18:45 - 19:15 - FIREWIND" />
+            <TextView
+                android:id="@+id/soulfly"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/firewind"
+                android:paddingTop="@dimen/rozestupKapely"
+                android:paddingStart="@dimen/rozestupKapelyL"
+                android:text="20:45 - 21:15 - SOULFLY" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</FrameLayout>

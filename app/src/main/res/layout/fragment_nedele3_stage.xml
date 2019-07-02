@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.Sobota3Stage">
+
+    <ScrollView
+        android:id="@+id/scrollViewId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:isScrollContainer="false">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/symfobia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/rozestupKapely"
+                android:paddingStart="@dimen/rozestupKapelyL"
+                android:text="12:00 - 12:30 - SYMPHOBIA" />
+            <TextView
+                android:id="@+id/serenity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/symfobia"
+                android:paddingTop="@dimen/rozestupKapely"
+                android:paddingStart="@dimen/rozestupKapelyL"
+                android:text="12:45 - 13:15 - SERENITY" />
+            <TextView
+                android:id="@+id/seriousBlack"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/serenity"
+                android:paddingTop="@dimen/rozestupKapely"
+                android:paddingStart="@dimen/rozestupKapelyL"
+                android:text="14:00 - 14:30 - SERIOUS BLACK" />
+            <TextView
+                android:id="@+id/citron"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/seriousBlack"
+                android:paddingTop="@dimen/rozestupKapely"
+                android:paddingStart="@dimen/rozestupKapelyL"
+                android:text="14:45 - 15:15 - CITRON" />
+            <TextView
+                android:id="@+id/steelPanther"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/citron"
+                android:paddingTop="@dimen/rozestupKapely"
+                android:paddingStart="@dimen/rozestupKapelyL"
+                android:text="16:00 - 16:30 - STEEL PANTHER" />
+            <TextView
+                android:id="@+id/evergrey"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/steelPanther"
+                android:paddingTop="@dimen/rozestupKapely"
+                android:paddingStart="@dimen/rozestupKapelyL"
+                android:text="16:45 - 17:15 - EVERGREY" />
+            <TextView
+                android:id="@+id/darkTranquillity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/evergrey"
+                android:paddingTop="@dimen/rozestupKapely"
+                android:paddingStart="@dimen/rozestupKapelyL"
+                android:text="17:45 - 18:15 - DARK TRANQUILLITY" />
+            <TextView
+                android:id="@+id/primalFear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/darkTranquillity"
+                android:paddingTop="@dimen/rozestupKapely"
+                android:paddingStart="@dimen/rozestupKapelyL"
+                android:text="19:00 - 19:30 - PRIMAL FEAR" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</FrameLayout>

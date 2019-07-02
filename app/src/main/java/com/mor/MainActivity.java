@@ -22,6 +22,10 @@ import com.mor.fragments.Ctvrtek2Stage;
 import com.mor.fragments.Patek2Stage;
 import com.mor.fragments.Sobota2Stage;
 import com.mor.fragments.Nedele2Stage;
+import com.mor.fragments.Ctvrtek3Stage;
+import com.mor.fragments.Patek3Stage;
+import com.mor.fragments.Sobota3Stage;
+import com.mor.fragments.Nedele3Stage;
 import com.mor.fragments.About;
 import java.util.Calendar;
 
@@ -66,6 +70,11 @@ public class MainActivity extends AppCompatActivity
         SpannableString s2 = new SpannableString(tools2.getTitle());
         s2.setSpan(new TextAppearanceSpan(this, R.style.MyTheme), 0, s2.length(), 0);
         tools2.setTitle(s2);
+
+        MenuItem tools3= myMenu.findItem(R.id.program3stage);
+        SpannableString s3 = new SpannableString(tools3.getTitle());
+        s3.setSpan(new TextAppearanceSpan(this, R.style.MyTheme), 0, s3.length(), 0);
+        tools3.setTitle(s3);
 
 
         showToday();
@@ -139,6 +148,18 @@ public class MainActivity extends AppCompatActivity
             displaySelectedFragment(fragment);
         } else if (id == R.id.drawerNedele2stage) {
             fragment = new Nedele2Stage();
+            displaySelectedFragment(fragment);
+        } else if (id == R.id.drawerCtvrtek3stage) {
+            fragment = new Ctvrtek3Stage();
+            displaySelectedFragment(fragment);
+        }  else if (id == R.id.drawerPatek3stage) {
+            fragment = new Patek3Stage();
+            displaySelectedFragment(fragment);
+        } else if (id == R.id.drawerSobota3stage) {
+            fragment = new Sobota3Stage();
+            displaySelectedFragment(fragment);
+        } else if (id == R.id.drawerNedele3stage) {
+            fragment = new Nedele3Stage();
             displaySelectedFragment(fragment);
         }
 

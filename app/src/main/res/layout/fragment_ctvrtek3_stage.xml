@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.Ctvrtek3Stage">
+
+    <ScrollView
+        android:id="@+id/scrollViewId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:isScrollContainer="false">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/mayan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/rozestupKapely"
+                android:paddingStart="@dimen/rozestupKapelyL"
+                android:text="13:30 - 14:00 - MAYAN" />
+            <TextView
+                android:id="@+id/turilliLioneRhapsody"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/mayan"
+                android:paddingTop="@dimen/rozestupKapely"
+                android:paddingStart="@dimen/rozestupKapelyL"
+                android:text="14:15 - 14:45 - TURILLI LIONE RHAPSODY" />
+            <TextView
+                android:id="@+id/cyhra"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/turilliLioneRhapsody"
+                android:paddingTop="@dimen/rozestupKapely"
+                android:paddingStart="@dimen/rozestupKapelyL"
+                android:text="15:00 - 15:30 - CYHRA" />
+            <TextView
+                android:id="@+id/delain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cyhra"
+                android:paddingTop="@dimen/rozestupKapely"
+                android:paddingStart="@dimen/rozestupKapelyL"
+                android:text="15:45 - 16:15 - DELAIN" />
+            <TextView
+                android:id="@+id/xandria"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/delain"
+                android:paddingTop="@dimen/rozestupKapely"
+                android:paddingStart="@dimen/rozestupKapelyL"
+                android:text="16:30 - 17:00 - XANDRIA" />
+            <TextView
+                android:id="@+id/gammaRay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/xandria"
+                android:paddingTop="@dimen/rozestupKapely"
+                android:paddingStart="@dimen/rozestupKapelyL"
+                android:text="17:15 - 17:45 - GAMMA RAY" />
+            <TextView
+                android:id="@+id/saltatioMortis"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/gammaRay"
+                android:paddingTop="@dimen/rozestupKapely"
+                android:paddingStart="@dimen/rozestupKapelyL"
+                android:text="18:00 - 18:30 - SALTATIO MORTIS" />
+            <TextView
+                android:id="@+id/eluveitie"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/saltatioMortis"
+                android:paddingTop="@dimen/rozestupKapely"
+                android:paddingStart="@dimen/rozestupKapelyL"
+                android:text="18:45 - 19:15 - ELUVEITIE" />
+            <TextView
+                android:id="@+id/uriahHeep"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/eluveitie"
+                android:paddingTop="@dimen/rozestupKapely"
+                android:paddingStart="@dimen/rozestupKapelyL"
+                android:text="19:30 - 20:00 - URIAH HEEP" />
+            <TextView
+                android:id="@+id/deathstars"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/uriahHeep"
+                android:paddingTop="@dimen/rozestupKapely"
+                android:paddingStart="@dimen/rozestupKapelyL"
+                android:text="22:00 - 22:30 - DEATHSTARS" />
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</FrameLayout>

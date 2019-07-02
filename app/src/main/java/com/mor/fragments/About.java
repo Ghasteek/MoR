@@ -7,7 +7,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import com.mor.R;
-import com.mor.constants.NavigationDrawerConstants;
+
 import java.util.Objects;
 
 
@@ -18,7 +18,7 @@ public class About extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        Objects.requireNonNull(getActivity()).setTitle(NavigationDrawerConstants.TAG_About);
+        Objects.requireNonNull(getActivity()).setTitle(R.string.drawerAbout);
     }
 
     @Override

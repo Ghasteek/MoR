@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MoR 2019</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">MASTERS OF ROCK 2019</string>
+    <string name="nav_header_subtitle">Vizovice</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="drawerProgram">Program</string>
+    <string name="menuTitleOthers">Ostatní</string>
+    <string name="menuTitleProgram">Program</string>
+    <string name="drawerAbout">O aplikaci</string>
+
+    <string name="drawerCtvrtek">Čtvrtek (11.7.2019)</string>
+    <string name="ctvrtek2Title">Čtvrtek - FWC stage</string>
+    <string name="ctvrtek3Title">Čtvrtek - M&amp;G stage</string>
+    <string name="ctvrtekTitle">Čtvrtek - RJD stage</string>
+
+    <string name="drawerPatek">Pátek (12.7.2019)</string>
+    <string name="patek2Title">Pátek - FWC stage</string>
+    <string name="patek3Title">Pátek - M&amp;G stage</string>
+    <string name="patekTitle">Pátek - RJD stage</string>
+
+    <string name="drawerSobota">Sobota (13.7.2019)</string>
+    <string name="sobota2Title">Sobota - FWC stage</string>
+    <string name="sobota3Title">Sobota - M&amp;G stage</string>
+    <string name="sobotaTitle">Sobota - RJD stage</string>
+
+    <string name="drawerNedele">Neděle (14.7.2019)</string>
+    <string name="nedele2Title">Neděle - FWC stage</string>
+    <string name="nedele3Title">Neděle - M&amp;G stage</string>
+    <string name="nedeleTitle">Neděle - RJD stage</string>
+
+    <string name="aboutPopis">Masters Of Rock 2019 - v1.1</string>
+    <string name="aboutAutor">Autor: Tomáš podolský</string>
+    <string name="aboutMail">podolsky.tomas@gmail.com</string>
+    <string name="aboutQr">QR kód s odkazem na stáhnutí aplikace pro tvé přátele. \n Stáhni a nainstaluj nejvyšší verzi.</string>
+
+</resources>

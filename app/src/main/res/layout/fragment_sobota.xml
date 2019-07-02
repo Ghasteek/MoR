@@ -24,7 +24,7 @@
                 android:textSize="20sp"
                 android:background="@color/colorRed"
                 android:paddingTop="4sp"
-                android:text="Sobota - 13.7.2019" />
+                android:text="@string/drawerSobota" />
 
             <TextView
                 android:id="@+id/ten"

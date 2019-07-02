@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.Patek3Stage">
+
+    <ScrollView
+        android:id="@+id/scrollViewId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:isScrollContainer="false">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/rhemorha"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/rozestupKapely"
+                android:paddingStart="@dimen/rozestupKapelyL"
+                android:text="12:45 - 13:15 - RHEMORHA" />
+            <TextView
+                android:id="@+id/ratsAndWolves"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rhemorha"
+                android:paddingTop="@dimen/rozestupKapely"
+                android:paddingStart="@dimen/rozestupKapelyL"
+                android:text="15:00 - 15:30 - TO THE RATS AND WOLVES" />
+            <TextView
+                android:id="@+id/twilightForce"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ratsAndWolves"
+                android:paddingTop="@dimen/rozestupKapely"
+                android:paddingStart="@dimen/rozestupKapelyL"
+                android:text="15:45 - 16:15 - TWILIGHT FORCE" />
+            <TextView
+                android:id="@+id/hardline"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/twilightForce"
+                android:paddingTop="@dimen/rozestupKapely"
+                android:paddingStart="@dimen/rozestupKapelyL"
+                android:text="17:15 - 17:45 - HARDLINE" />
+            <TextView
+                android:id="@+id/battleBeast"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/hardline"
+                android:paddingTop="@dimen/rozestupKapely"
+                android:paddingStart="@dimen/rozestupKapelyL"
+                android:text="18:45 - 19:15 - BATTLE BEAST" />
+            <TextView
+                android:id="@+id/equilibrium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/battleBeast"
+                android:paddingTop="@dimen/rozestupKapely"
+                android:paddingStart="@dimen/rozestupKapelyL"
+                android:text="20:15 - 20:45 - EQUILIBRIUM" />
+            <TextView
+                android:id="@+id/amaranthe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/equilibrium"
+                android:paddingTop="@dimen/rozestupKapely"
+                android:paddingStart="@dimen/rozestupKapelyL"
+                android:text="21:00 - 21:30 - SALTATIO MORTIS" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</FrameLayout>

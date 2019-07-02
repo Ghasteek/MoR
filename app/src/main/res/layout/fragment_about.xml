@@ -5,6 +5,13 @@
     android:layout_height="match_parent"
     tools:context=".fragments.About">
 
+
+    <ScrollView
+        android:id="@+id/scrollViewId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:isScrollContainer="false">
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -15,7 +22,7 @@
             android:layout_height="wrap_content"
             android:src="@mipmap/ic_launcher_foreground"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="180sp"/>
+            android:layout_marginTop="50sp"/>
 
         <TextView
             android:id="@+id/version"
@@ -23,7 +30,7 @@
             android:layout_height="wrap_content"
             android:layout_alignBottom="@+id/logo"
             android:layout_centerHorizontal="true"
-            android:text="Masters Of Rock 2019 - v1.0"/>
+            android:text="@string/aboutPopis"/>
 
         <TextView
             android:id="@+id/author"
@@ -32,16 +39,37 @@
             android:layout_alignTop="@+id/version"
             android:layout_marginTop="30sp"
             android:layout_centerHorizontal="true"
-            android:text="Autor: Tomáš Podolský"/>
+            android:text="@string/aboutAutor"/>
 
         <TextView
+            android:id="@+id/mail"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignTop="@+id/author"
             android:layout_marginTop="30sp"
             android:layout_centerHorizontal="true"
-            android:text="podolsky.tomas@gmail.com"/>
+            android:text="@string/aboutMail"/>
+
+        <ImageView
+            android:id="@+id/qr"
+            android:layout_width="200sp"
+            android:layout_height="200sp"
+            android:src="@drawable/qr"
+            android:layout_alignTop="@+id/mail"
+            android:layout_marginTop="80sp"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:id="@+id/link"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/qr"
+            android:layout_marginTop="220sp"
+            android:layout_centerHorizontal="true"
+            android:text="@string/aboutQr"
+            android:gravity="center"/>
 
     </RelativeLayout>
+    </ScrollView>
 
 </FrameLayout>

@@ -12,7 +12,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ScrollView;
 import com.mor.R;
-import com.mor.constants.NavigationDrawerConstants;
 import java.util.Calendar;
 import java.util.Objects;
 
@@ -22,7 +21,7 @@ public class Patek2Stage extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        Objects.requireNonNull(getActivity()).setTitle(NavigationDrawerConstants.TAG_Patek2Stage);
+        Objects.requireNonNull(getActivity()).setTitle(R.string.patek2Title);
     }
 
     @Override

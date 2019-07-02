@@ -9,4 +9,7 @@
     <dimen name="alphaImg">0.6</dimen>
     <dimen name="alphaDivider">0.6</dimen>
     <dimen name="alphaPointer">0.8</dimen>
+    <dimen name="alphaDone">0.6</dimen>
+    <dimen name="rozestupKapely">10sp</dimen>
+    <dimen name="rozestupKapelyL">10sp</dimen>
 </resources>

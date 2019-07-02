@@ -23,7 +23,7 @@
                 android:layout_height="35dp"
                 android:background="@color/colorRed"
                 android:paddingTop="4sp"
-                android:text="Čtvrtek - 11.7.2019"
+                android:text="@string/drawerCtvrtek"
                 android:textAlignment="center"
                 android:textSize="20sp" />
 

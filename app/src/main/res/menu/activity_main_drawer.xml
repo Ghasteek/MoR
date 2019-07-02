@@ -50,6 +50,31 @@
                     android:id="@+id/drawerNedele2stage"
                     android:icon="@drawable/ic_menu_send"
                     android:title="@string/drawerNedele" />
+            </group>
+        </menu>
+    </item>
+    <item
+        android:id="@+id/program3stage"
+        android:title="Meet&amp;Greet Stage">
+        <menu>
+            <group
+                android:checkableBehavior="single">
+                <item
+                    android:id="@+id/drawerCtvrtek3stage"
+                    android:icon="@drawable/ic_menu_send"
+                    android:title="@string/drawerCtvrtek" />
+                <item
+                    android:id="@+id/drawerPatek3stage"
+                    android:icon="@drawable/ic_menu_send"
+                    android:title="@string/drawerPatek" />
+                <item
+                    android:id="@+id/drawerSobota3stage"
+                    android:icon="@drawable/ic_menu_send"
+                    android:title="@string/drawerSobota" />
+                <item
+                    android:id="@+id/drawerNedele3stage"
+                    android:icon="@drawable/ic_menu_send"
+                    android:title="@string/drawerNedele" />
                 <item
                     android:id="@+id/drawerAbout"
                     android:icon="@android:drawable/ic_menu_info_details"

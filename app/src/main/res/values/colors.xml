@@ -8,4 +8,5 @@
     <color name="colorBackground">#313E47</color>
     <color name="colorDarkShadow">#151718 </color>
     <color name="primaryText">#ffffff </color>
+    <color name="textDone">#999999 </color>
 </resources>
